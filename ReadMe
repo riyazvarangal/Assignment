@@ -47,7 +47,7 @@ Step 1: Click Start button and Search for "cmd", then open it.
 Step 2: In command prompt, Go to the path where you copied the jar by using cd command
 Step 3: Download the Assigment.jar, InputFileFormat1.txt & InputFileFormat2.txt to local folder.
 Step 4: Run the command: java -jar Assignment.jar
-Step 5: Follow the instructions on the CMD to supply input file path(for ex: C:\temp\InputFileFormat1.txt). Sample input files attached in email.
+Step 5: Follow the instructions on the CMD to supply input file path(for ex: C:\temp\InputFileFormat1.txt).
 Step 6: Inspect the output file EmpRecord1.txt and EmpRecord2.txt for the results.
 
 *****************************************************************************************************************************************************
