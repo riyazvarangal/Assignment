@@ -1,0 +1,51 @@
+*********************************************************Class files***********************************************************************
+Main.java
+     *It's the Main class for this jar.
+     *It prompts user to provide the location of Inputfile for processing.
+     *As per requirement, only text files are accepted.
+     *The format of the input file could be either one of the two formats specified below. The input file will contain a file format code (1 or 2) on the first line and a sequence of records, with one record per line
+     *You can type 0+Enter anytime to exit the program.
+     *Once user provides a valid path of input file, program checks the format code present in first line.
+     *Depending on the format code present in Input file, Program invokes the correct implementaion class of the abstract class EmpFile.
+     *Implentation class reads the lines in InputFile and parse them to a list of Employee objects.
+     *List is sorted and contents of the each employee Object is printed to a output file as per the layout provided in requirement.
+     *Output file is created in same location as that of Input file.
+
+Employee.java
+     *Java object to hold employee information
+     *It implements a Comparable Interface, So that a collection of Employee objects can be sorted.
+     *As per the requirement, Employee records will be sorted ascending by their First Name, Last Name and Start Date.
+
+EmpFile.java
+     *Abstract class defined with constants and the sequence order of Employee elements presnet in the Input file.
+     *If the sequence order for elements is changed in input file, its enough to change the ordering in this class.
+     *It has abstract method parseFile(), whose implementation is defined in the classes FixedLengthFile and CommaSeparatedFile.
+     *createEmployeeObject method validates the elements of the record in input file, Throw message to user appropriately. If no issues in record, then creates Employee object.
+
+FixedLengthFile.java
+     *As per requirement, default length is defined as 80
+     *A HashMap contains the element label as key and length as value. Length is defined as provided in the requirement.
+     *Position of each element in the input file record is dynamically obtained from the sequence order of elements and length of the element.
+     *For any change in the length of element requires only the HashMap to be updated.
+     *parseFile() method is implemented.
+
+TokenSeparatedFile.java
+     *As per requirement, default delimiter is defined as comma
+     *Validates the number of elements in a record is matching the element list size, Since commas will be present as place holders for absent elements.
+     *delimiter comma can be overwritten as well if file delimiter is updated.
+     *parseFile() method is implemented based.
+
+Helper.java
+     *Helper method to find if the file path is valid.
+     *Helper method to get the file extension.
+     *Helper method to validate Numeric, alphabets and alphanumerics
+
+*********************************************************Class files**********************************************************************************************************
+
+***********************************************Running the program*********************************************************************************
+Step 1: Click Start button and Search for "cmd", then open it.
+Step 2: In command prompt, Go to the path where you copied the jar by using cd command
+Step 3: Run the command: java -jar Assignment.jar
+Step 4: Follow the instructions on the CMD to supply input file path. Sample input files attached in email.
+
+*****************************************************************************************************************************************************
